@@ -19,6 +19,7 @@ Prototipo
 ```
 
 ## Entidad Product
+```text
 id (string) 
 name (string) 
 price (number) 
@@ -26,20 +27,23 @@ stock (number)
 is_active (boolean) 
 created_at (datetime) 
 updated_at (datetime)
+```
 
 ## Endpoints:
+```text
 GET /products: Debe devolver la lista de productos. 
 GET /products/:id: Debe devolver un producto por su id. 
 POST /products: Debe crear un producto. 
 PATCH /products/:id: Debe actualizar un producto por su id. 
 DELETE /products/:id: Debe eliminar un producto por su id.
+```
 
 ## Instalación
-Puedes clonar el repositorio en tu VSC:
+- Puedes clonar el repositorio en tu VSC:
 
-git clone
+git clone https://github.com/RocioLdlT/Prototipo.git
 
-Y después:
+- Y después añadir en tu terminal:
 
 npm i (o npm install)
 

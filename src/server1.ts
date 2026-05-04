@@ -30,10 +30,14 @@ app.get('/products', (req, res) => {
 // Devuelve el body de un producto que buscaremos mediante su id.
 
 app.get('/products/:id', (req, res) => {
-    const { id } = req.params;
-    const products = [{ id: 1 }, { id: 2 }];
-    res.json(products.find((products) => products.id === Number(id)));
-    return;
+  const { id } = req.params; // Extraemos el id de la URL
+  const product = products.find((p) => p.id === id); // Buscamos el producto en el array
+ 
+  if (product) {
+    res.json(product);
+  } else {
+    res.status(404).json({ message: 'Product not found' }); 
+  }
 });
 
 // POST /products

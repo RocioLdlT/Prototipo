@@ -2,7 +2,7 @@
     "name": "Prototipo",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "server1.js",
     "scripts": {
      "start": "cross-env NODE_ENV=prod node ./src/server1.ts",
         "dev": "node --watch --env-file=.env ./src/server1.ts"
